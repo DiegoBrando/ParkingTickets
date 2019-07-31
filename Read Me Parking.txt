@@ -1,0 +1,22 @@
+﻿Notes:
+* Must Have Python 3 Installed 
+* Must Have Pip Installed
+* Useful to already have installed Xgboost, pandas, and pickle, but if not run.sh will install it for you
+* Please have input json file in the same folder with the name input.json
+* Output will be generated in the same folder with the name output.json
+
+
+
+
+How To Run:
+* Have data to predict as a json file in the same folder, and name it input.json
+* Run run.sh in folder
+* Then run client.py
+
+
+Programs:
+* Run.sh- Runs the system, first it pip install the necessary parts and then it runs train.py and finally server.py
+* Client.py- allows access to the simple server
+* server.py-  creates the server on localhost port 8080
+* Train.py- trains and stores the model
+* Return.py- Runs the code and has two functions, it has the training function of train.py incase something goes wrong, and it then predicts the probability for the make being one of the top 25. It stores the percent in column Top25 and returns the data as a json file named output.json in the same folder.
